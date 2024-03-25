@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatePickerFragment">
+
+    <TextView
+        android:id="@+id/tvChangeCrime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/tvChangeCrime"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnSetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSetDate" />
+
+        <Button
+            android:id="@+id/btnSetTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSetTime" />
+
+        <Button
+            android:id="@+id/btnSetTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/brnSetTitle" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgDate"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChangeCrime">
+
+        <RadioButton
+            android:id="@+id/rbDate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date1" />
+
+        <RadioButton
+            android:id="@+id/rbDate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date2" />
+
+        <RadioButton
+            android:id="@+id/rbDate3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date3" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgTime"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChangeCrime">
+
+        <RadioButton
+            android:id="@+id/rbTime1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time1" />
+
+        <RadioButton
+            android:id="@+id/rbTime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time2" />
+
+        <RadioButton
+            android:id="@+id/rbTime3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time3" />
+
+        <RadioButton
+            android:id="@+id/rbTime4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time4" />
+
+        <RadioButton
+            android:id="@+id/rbTime5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time5" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgTitle"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChangeCrime">
+
+        <RadioButton
+            android:id="@+id/rbTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title1" />
+
+        <RadioButton
+            android:id="@+id/rbTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title2" />
+
+        <RadioButton
+            android:id="@+id/rbTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title3" />
+
+        <RadioButton
+            android:id="@+id/rbTitle4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title4" />
+
+        <RadioButton
+            android:id="@+id/rbTitle5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title5" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnApply"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cbIsSolved"
+        android:textSize="20sp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnApply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

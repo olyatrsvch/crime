@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Crime</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="crimeText">
+Crime type: %s\n
+Identifier: %s\n
+Date: %s\n
+Time: %s\n
+Solved: %s
+    </string>
+
+    <string name="btnSetDate">Set date</string>
+    <string name="btnSetTime">Set time</string>
+    <string name="brnSetTitle">Set title</string>
+    <string name="cbIsSolved">Solved</string>
+    <string name="tvChangeCrime">Change the crime story</string>
+    <string name="btnChange">Change</string>
+    <string name="btnApply">Apply</string>
+
+    <!-- Date -->
+    <string name="date1">19.01.2002</string>
+    <string name="date2">28.07.2001</string>
+    <string name="date3">01.01.2023</string>
+
+    <!-- Time -->
+    <string name="time1">9:50</string>
+    <string name="time2">11:40</string>
+    <string name="time3">13:40</string>
+    <string name="time4">15:30</string>
+    <string name="time5">17:20</string>
+
+    <!-- Title -->
+    <string name="title1">Theft</string>
+    <string name="title2">Robbery</string>
+    <string name="title3">Murder</string>
+    <string name="title4">Fraud</string>
+    <string name="title5">Kidnapping</string>
+</resources>
